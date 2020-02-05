@@ -38,28 +38,55 @@
         <li>Toys</li>
       </ul>
       <form class="toys-filter">
-        <label class="cost">
-          Cost
-          <input type="range" name="cost" id="cost" min="0" max="500">
-        </label>
-        <label class="color">
-          Color
-          <input type="checkbox" name="Black" id="color" value="Black" checked>Black
-          <input type="checkbox" name="Blue" id="color" value="Blue">Blue
-          <input type="checkbox" name="Green" id="color" value="Green">Green
-          <input type="checkbox" name="White" id="color" value="White">White
-        </label>
-        <label class="delivery">
-          Delivery
-          <input type="radio" name="free" id="free">Free shipping
-          <input type="radio" name="fast" id="fast">Fast shipping
-        </label>
-        <label>
-          Amount
-          <input type="radio" name="0-5" id="">0-5
-          <input type="radio" name="10-20" id="">10-20
-          <input type="radio" name="20-50" id="">20-50
-        </label>
+        <fieldset>
+          <legend class="filter-legend">Cost</legend>
+          <label>
+            <input class="filter-range" type="range" name="cost" min="0" max="500">
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend class="filter-legend">Color</legend>
+          <label>
+            <input class="filter-color" type="checkbox" name="color" checked>
+            Black
+          </label>
+          <label>
+            <input class="filter-color" type="checkbox" name="color">
+            Blue
+          </label>
+          <label>
+            <input class="filter-color" type="checkbox" name="color">
+            Green
+          </label>
+          <label>
+            <input class="filter-color" type="checkbox" name="color">
+            White
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend class="filter-legend">Delivery</legend>
+          <label>
+            <input class="filter-delivery" type="radio" name="delivery">Free shipping
+          </label>
+          <label>
+            <input class="filter-delivery" type="radio" name="delivery" checked>Fast shipping
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend class="filter-legend">Amount</legend>
+          <label>
+            <input class="filter-amount" type="radio" name="amount" checked>
+            0-5
+          </label>
+          <label>
+            <input class="filter-amount" type="radio" name="amount">
+            10-20
+          </label>
+          <label>
+            <input class="filter-amount" type="radio" name="amount">
+            20-50
+          </label>
+        </fieldset>
         <button class="button button_black" type="submit">Apply</button>
       </form>
     </section>
@@ -69,10 +96,11 @@
         <img src="/images/shark-bag.jpg" alt="SHARKY BEAN BAG CHAIR COVER">
         <H2 class="card-title">SHARKY BEAN BAG CHAIR COVER</H2>
         <p class="price">$60.00 USD</p>
+      </article>
       <article class="toy-slider__card">
         <img src="/images/brass.jpg" alt="BRASS DECO FRAMES">
         <H2 class="card-title">BRASS DECO FRAMES</H2>
-        <p class="price"$66.00 USD></p>
+        <p class="price">$66.00 USD></p>
       </article>
       <article class="toy-slider__card">
         <img src="/images/apron.jpg" alt="CIBO FULL APRON">
