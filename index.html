@@ -248,7 +248,7 @@
         </p>
       </div>
     </footer>
-    <form class="modal-window" action="№" method="POST">
+    <form class="modal-window" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
       <label for="form-name">Name</label>
       <input type="text" id="form-name" name="name" />
 
@@ -261,16 +261,16 @@
       <label for="form-message">Message</label>
       <textarea name="message" id="form-message"></textarea>
 
-      <label for="form-check">
+      <label for="form-accept">
         By clicking on the button, you consent to the processing of
         your personal data
       </label>
-      <input type="checkbox" id="form-check" />
+      <input type="checkbox" name="accept" id="form-accept"  value="accept"/>
 
       <button class="button button_green" type="submit">
         Submit
       </button>
-      <button type="button"></button>
+      <button type="button">x</button>
     </form>
   </body>
 </html>
