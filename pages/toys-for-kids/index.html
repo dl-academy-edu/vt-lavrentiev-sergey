@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Toys for Kids</title>
+  </head>
+  <body>
+    <header>
+      <a class="header-logo" href="/index.html">
+        <img src="/images/logo.svg" alt="logo" />
+      </a>
+      <nav class="header-nav">
+        <ul>
+          <li class="nav-link"><a href="#">Blog</a></li>
+          <li class="nav-link">
+            <a href="/pages/category-products/index.html">Catalog</a>
+          </li>
+          <li class="nav-link"><a href="#">About us</a></li>
+        </ul>
+        <ul>
+          <li class="nav-link search">
+            <a href="#">
+              <img src="/images/search.svg" alt="search" />
+            </a>
+          </li>
+          <li class="nav-link"><a href="#">Contact us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+    <section class="toys">
+      <h1>Toy for kids</h1>
+      <ul class="breadcrumbs">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/pages/category-products/index.html">Catalog</a></li>
+        <li>Toys</li>
+      </ul>
+      <form class="toys-filter">
+        <fieldset>
+          <legend class="filter-legend">Cost</legend>
+          <label>
+            <input class="filter-range" type="range" name="cost" min="0" max="500">
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend class="filter-legend">Color</legend>
+          <label>
+            <input class="filter-color" type="checkbox" name="color" value="black" checked>
+            Black
+          </label>
+          <label>
+            <input class="filter-color" type="checkbox" name="color" value="blue">
+            Blue
+          </label>
+          <label>
+            <input class="filter-color" type="checkbox" name="color" value="green">
+            Green
+          </label>
+          <label>
+            <input class="filter-color" type="checkbox" name="color" value="white">
+            White
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend class="filter-legend">Delivery</legend>
+          <label>
+            <input class="filter-delivery" type="radio" name="delivery" value="free">Free shipping
+          </label>
+          <label>
+            <input class="filter-delivery" type="radio" name="delivery" value="fast" checked>Fast shipping
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend class="filter-legend">Amount</legend>
+          <label>
+            <input class="filter-amount" type="radio" name="amount" value="0-5" checked>
+            0-5
+          </label>
+          <label>
+            <input class="filter-amount" type="radio" name="amount" value="10-20">
+            10-20
+          </label>
+          <label>
+            <input class="filter-amount" type="radio" name="amount" value="20-50">
+            20-50
+          </label>
+        </fieldset>
+        <button class="button button_black" type="submit">Apply</button>
+      </form>
+    </section>
+    <section class="toy-slider">
+      <h2 class="toy-slider__title">Products display</h2>
+      <article class="toy-slider__card">
+        <a href="#" class="toy-slider__link">
+          <img src="/images/shark-bag.jpg" alt="SHARKY BEAN BAG CHAIR COVER">
+        </a>
+        <H3 class="card-title"><a href="#">SHARKY BEAN BAG CHAIR COVER</a></H3>
+        <p class="price">$60.00 USD</p>
+      </article>
+      <article class="toy-slider__card">
+        <a href="#" class="toy-slider__link">
+          <img src="/images/brass.jpg" alt="BRASS DECO FRAMES">
+        </a>
+        <H3 class="card-title"><a href="#">BRASS DECO FRAMES</a></H3>
+        <p class="price">$66.00 USD></p>
+      </article>
+      <article class="toy-slider__card">
+        <a href="#" class="toy-slider__link">
+          <img src="/images/apron.jpg" alt="CIBO FULL APRON">
+        </a>
+        <H3 class="card-title"><a href="#">CIBO FULL APRON</a></H3>
+        <p class="price">$60.00 USD</p>
+      </article>
+      <article class="toy-slider__card">
+        <a href="#" class="toy-slider__link">
+          <img src="/images/gumball-machine.jpg" alt="GATCHA GATCHA GUMBALL MACHINE">
+        </a>
+        <H3 class="card-title"><a href="#">GATCHA GATCHA GUMBALL MACHINE</a></H3>
+        <p class="price">$56.00 USD</p>
+      </article>
+      <article class="toy-slider__card">
+        <a href="#" class="toy-slider__link">
+          <img src="/images/christmas-candle.jpg" alt="CHRISTMAS ADVENT SCENTED CANDLE">
+        </a>
+        <H3 class="card-title"><a href="#">CHRISTMAS ADVENT SCENTED CANDLE</a></H3>
+        <p class="price">$29.00 USD</p>
+      </article>
+      <article class="toy-slider__card">
+        <a href="#" class="toy-slider__link">
+          <img src="/images/tangle_spinning_tea_light.jpg" alt="TANGLE SPINNING TEA LIGHT">
+        </a>
+        <H3 class="card-title"><a href="#">TANGLE SPINNING TEA LIGHT</a></H3>
+        <p class="price">$56.00 USD</p>
+      </article>
+      <div class="toy-slider__nav">
+        <a href="#" class="toy-slider__arrow left"></a>
+        <a href="#" class="toy-slider__arrow right"></a>
+        <a href="#" class="toy-slider-btn">1</a>
+        <a href="#" class="toy-slider-btn">2</a>
+        <a href="#" class="toy-slider-btn">3</a>
+        <a href="#" class="toy-slider-btn">4</a>
+      </div>
+    </section>
+    </main>
+    <footer class="footer">
+      <h2 class="footer-title">Navigation</h2>
+      <ul class="navigation-list">
+        <li class="menu navigation-list-item"><a href="#">About Us</a></li>
+        <li class="menu navigation-list-item"><a href="#">Blog</a></li>
+        <li class="menu navigation-list-item">
+          <a href="#">Design Services</a>
+        </li>
+        <li class="menu navigation-list-item"><a href="#">Featured On</a></li>
+        <li class="menu navigation-list-item">
+          <a href="#">2018 Holiday Catalog</a>
+        </li>
+        <li class="navigation-list-item"><a href="#">Shop By Designer</a></li>
+      </ul>
+      <h2 class="footer-title">Customer Information</h2>
+      <ul class="customer-info-list">
+        <li class="menu customer-info-item"><a href="#">Contact Us</a></li>
+        <li class="menu customer-info-item"><a href="#">Sale Exclusions</a></li>
+        <li class="menu customer-info-item">
+          <a href="#">Shipping & Returns</a>
+        </li>
+        <li class="menu customer-info-item">
+          <a href="#">Terms & Conditions</a>
+        </li>
+        <li class="menu customer-info-item"><a href="#">Privacy Policy</a></li>
+        <li class="menu customer-info-item"><a href="#">Search</a></li>
+      </ul>
+      <h2 class="footer-title">Connect</h2>
+      <form>
+        <input type="email" name="email" placeholder="Email" />
+        <button class="button button_black" type="submit">Join</button>
+      </form>
+      <ul class="social-list">
+        <li class="social-list-item">
+          <a href="#"><img src="/images/Facebook.svg" alt="Facebook"/></a>
+        </li>
+        <li class="social-list-item">
+          <a href="#"><img src="/images/Twitter.svg" alt="Twitter"/></a>
+        </li>
+        <li class="social-list-item">
+          <a href="#"><img src="/images/Pinterest.svg" alt="Pinterest"/></a>
+        </li>
+        <li class="social-list-item">
+          <a href="#"><img src="/images/Instagram.svg" alt="Instagram"/></a>
+        </li>
+      </ul>
+      <div class="company-info">
+        <div class="rating">
+          <p>Company Rating</p>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+        </div>
+        <p class="copyright">Copyright © 2018 Dlk • Design Life Kids</p>
+        <p class="design-company">
+          Web Design — <a href="#">Direct Line Development</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
