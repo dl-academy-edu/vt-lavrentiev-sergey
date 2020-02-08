@@ -1,0 +1,38 @@
+.blog-post__date {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #818181;
+}
+
+.blog-post__title {
+  font-family: '0Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px
+}
+
+.blog-post__decription {
+  font-size: 18px;
+line-height: 25px;
+}
+
+.pagination-btn {
+  font-family: 'Montserrat' sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+
+  text-transform: uppercase;
+  color: #1E0606;
+}
+
+.pagination-btn:active {
+  color:  #C29974;
+}
+
+.pagination-btn:hover {
+  color: #1E0606;
+  opacity: 0.5;
+}

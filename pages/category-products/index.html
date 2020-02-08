@@ -5,57 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Category products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/common.css">
+    <link rel="stylesheet" href="/pages/category-products/style.css">
   </head>
   <body>
-    <header>
+    <header class="header">
       <a class="header-logo" href="/index.html">
         <img src="/images/logo.svg" alt="logo" />
       </a>
       <nav class="header-nav">
         <ul>
-          <li class="nav-link"><a href="#">Blog</a></li>
+          <li><a href="#" class="nav-link">Blog</a></li>
           <li class="nav-link">Catalog</li>
-          <li class="nav-link"><a href="#">About us</a></li>
+          <li><a href="#" class="nav-link">About us</a></li>
         </ul>
         <ul>
-          <li class="nav-link search">
-            <a href="#">
-              <img src="/images/search.svg" alt="search" />
-            </a>
-          </li>
-          <li class="nav-link"><a href="#">Contact us</a></li>
+          <li><a href="#" class="search"><img src="/images/search.svg" class="search-icon" alt="search"/></a></li>
+          <li><a href="#" class="nav-link nav-link_bold">Contact us</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="products">
-        <h1>Category Products</h1>
+        <h1 class="section-title">Category Products</h1>
         <ul class="breadcrumbs">
-          <li><a href="/index.html">Home</a></li>
-          <li>Catalog</li>
+          <li><a href="/index.html" class="breadcrumbs-link">Home</a></li>
+          <li class="breadcrumb">Catalog</li>
         </ul>
         <ul class="category-list">
-          <li class="category-products">
-            <a href="#"><img src="/images/product-1.jpg" alt="Apparel kids" />APPAREL KIDS</a>
+          <li>
+            <a href="#" class="category-products">
+              <img src="/images/product-1.jpg" alt="Apparel kids"/>
+              APPAREL KIDS
+            </a>
           </li>
-          <li class="category-products">
-            <a href="#"><img src="/images/product-2.jpg" alt="Holiday shop" />HOLIDAY SHOP</a>
+          <li>
+            <a href="#" class="category-products">
+              <img src="/images/product-2.jpg" alt="Holiday shop"/>
+              HOLIDAY SHOP
+            </a>
           </li>
-          <li class="category-products">
-            <a href="/pages/toys-for-kids/index.html"><img src="/images/product-3.jpg" alt="Toys" />TOYS</a>
+          <li>
+            <a href="/pages/toys-for-kids/index.html" class="category-products">
+              <img src="/images/product-3.jpg" alt="Toys"/>
+              TOYS
+            </a>
           </li>
-          <li class="category-products">
-            <a href="#"><img src="/images/product-4.jpg" alt="Accessories"/>ACCESSORIES</a>
+          <li>
+            <a href="#" class="category-products">
+              <img src="/images/product-4.jpg" alt="Accessories"/>
+              ACCESSORIES
+            </a>
           </li>
-          <li class="category-products">
-            <a href="#"><img src="/images/product-5.jpg" alt="Sale"/>SALE</a>
+          <li>
+            <a href="#" class="category-products">
+              <img src="/images/product-5.jpg" alt="Sale"/>
+              SALE
+            </a>
           </li>
-          <li class="category-products">
-            <a href="#"><img src="/images/product-6.jpg" alt="Apparel adults"/>APPAREL ADULTS</a>
+          <li>
+            <a href="#" class="category-products">
+              <img src="/images/product-6.jpg" alt="Apparel adults"/>
+              APPAREL ADULTS
+            </a>
           </li>
         </ul>
         <div class="products-description">
-          <h2>Product Description</h2>
+          <h2 class="block-title">Product Description</h2>
           <p class="products-description__text">
             Interactive doll Zapf Creation Baby Born Sister can drink from a
             bottle and almost really cry. You can even bathe her, just like a
@@ -78,48 +95,34 @@
     <footer class="footer">
       <h2 class="footer-title">Navigation</h2>
       <ul class="navigation-list">
-        <li class="menu navigation-list-item"><a href="#">About Us</a></li>
-        <li class="menu navigation-list-item"><a href="#">Blog</a></li>
-        <li class="menu navigation-list-item">
-          <a href="#">Design Services</a>
-        </li>
-        <li class="menu navigation-list-item"><a href="#">Featured On</a></li>
-        <li class="menu navigation-list-item">
-          <a href="#">2018 Holiday Catalog</a>
-        </li>
-        <li class="navigation-list-item"><a href="#">Shop By Designer</a></li>
+        <li><a href="#" class="footer-links">About Us</a></li>
+        <li><a href="#" class="footer-links">Blog</a></li>
+        <li><a href="#" class="footer-links">Design Services</a></li>
+        <li><a href="#" class="footer-links">Featured On</a></li>
+        <li><a href="#" class="footer-links">2018 Holiday Catalog</a></li>
+        <li><a href="#" class="footer-links">Shop By Designer</a></li>
       </ul>
       <h2 class="footer-title">Customer Information</h2>
       <ul class="customer-info-list">
-        <li class="menu customer-info-item"><a href="#">Contact Us</a></li>
-        <li class="menu customer-info-item"><a href="#">Sale Exclusions</a></li>
-        <li class="menu customer-info-item">
-          <a href="#">Shipping & Returns</a>
-        </li>
-        <li class="menu customer-info-item">
-          <a href="#">Terms & Conditions</a>
-        </li>
-        <li class="menu customer-info-item"><a href="#">Privacy Policy</a></li>
-        <li class="menu customer-info-item"><a href="#">Search</a></li>
+        <li><a href="#" class="footer-links">Contact Us</a></li>
+        <li><a href="#" class="footer-links">Sale Exclusions</a></li>
+        <li><a href="#" class="footer-links">Shipping & Returns</a></li>
+        <li><a href="#" class="footer-links">Terms & Conditions</a></li>
+        <li><a href="#" class="footer-links">Privacy Policy</a></li>
+        <li><a href="#" class="footer-links">Search</a></li>
       </ul>
       <h2 class="footer-title">Connect</h2>
-      <form>
-        <input type="email" name="email" placeholder="Email" />
-        <button type="submit">Join</button>
+      <form class="footer-form">
+        <input type="email" class="footer-input" name="email" placeholder="Email" />
+        <button class="button button-border" type="submit">
+          Join
+        </button>
       </form>
       <ul class="social-list">
-        <li class="social-list-item">
-          <a href="#"><img src="/images/Facebook.svg" alt="Facebook"/></a>
-        </li>
-        <li class="social-list-item">
-          <a href="#"><img src="/images/Twitter.svg" alt="Twitter"/></a>
-        </li>
-        <li class="social-list-item">
-          <a href="#"><img src="/images/Pinterest.svg" alt="Pinterest"/></a>
-        </li>
-        <li class="social-list-item">
-          <a href="#"><img src="/images/Instagram.svg" alt="Instagram"/></a>
-        </li>
+        <li><a href="#" class="social-link"><img src="/images/Facebook.svg" alt="Facebook" /></a></li>
+        <li><a href="#" class="social-link"><img src="/images/Twitter.svg" alt="Twitter" /></a></li>
+        <li><a href="#" class="social-link"><img src="/images/Pinterest.svg" alt="Pinterest" /></a></li>
+        <li><a href="#" class="social-link"><img src="/images/Instagram.svg" alt="Instagram" /></a></li>
       </ul>
       <div class="company-info">
         <div class="rating">
@@ -130,7 +133,9 @@
           <span class="star">&#9733;</span>
           <span class="star">&#9733;</span>
         </div>
-        <p class="copyright">Copyright © 2018 Dlk • Design Life Kids</p>
+        <p class="copyright">
+          Copyright © 2018 Dlk • Design Life Kids
+        </p>
         <p class="design-company">
           Web Design — <a href="#">Direct Line Development</a>
         </p>

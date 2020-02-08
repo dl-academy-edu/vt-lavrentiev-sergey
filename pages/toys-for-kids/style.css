@@ -1,0 +1,50 @@
+.toys-filter {
+  background-color: rgba(125, 151, 218, 0.2);
+}
+
+.filter-legend {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.filter-color,
+.filter-delivery,
+.filter-amount {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.card-title a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #1E0606;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.pagination-btn {
+  font-family: 'Montserrat' sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+
+  text-transform: uppercase;
+  color: #1E0606;
+}
+
+.pagination-btn:active {
+  color:  #C29974;
+}
+
+.pagination-btn:hover {
+  color: #1E0606;
+  opacity: 0.5;
+}
