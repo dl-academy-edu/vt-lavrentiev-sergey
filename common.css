@@ -1,0 +1,167 @@
+body { 
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #1E0606;
+}
+
+a { 
+  text-decoration: none;
+  color: #1E0606;
+}
+
+li {
+  list-style-type: none;
+}
+
+html { 
+  box-sizing: border-box; 
+}
+
+*, 
+*::before, 
+*::after { 
+  box-sizing: inherit; 
+}
+
+img { 
+  max-width: 100%; 
+}
+
+/* titles */
+
+.section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+}
+
+.block-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;
+  text-transform: uppercase;
+}
+
+.title-hidden {
+  visibility: hidden;
+}
+/* header */
+
+.nav-link {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  color: #1E0606;
+}
+
+.search {
+  fill: #000000;
+}
+
+.nav-link_bold {
+  font-weight: bold;
+}
+
+/* footer */
+footer {
+  background: #434343;
+  color: #FFFFFF;
+}
+
+.footer-title {
+  color: #C4C4C4;
+}
+
+.footer-links {
+  color: #FFFFFF;
+}
+
+.button {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  border: none;
+  color: #FFFFFF;
+  background-color: #1E0606;
+}
+
+.footer-input {
+  background-color: #666666;;
+  border: none;
+}
+
+::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #EBEBEB;
+}
+
+.design-company,
+.design-company a {
+  color: #A2A2A2;;
+}
+
+/* breadcrumbs */
+
+.breadcrumb {
+font-family: Crimson Text;
+font-style: italic;
+font-size: 20px;
+line-height: 25px;
+
+color: #1E0606;
+opacity: 0.5;
+}
+
+.breadcrumbs-link {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-size: 20px;
+  line-height: 25px;
+
+  color: #1E0606;
+}
+
+/* hover */
+
+.nav-link:hover {
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: #C29974;;
+}
+
+/* active */
+
+.nav-link:active {
+  font-weight: bold;
+}
+
+.nav-link_bold:active {
+  font-weight: 400;
+}
+
+.button:active {
+  background-color: #CFAF91;;
+}
+
+/* disabled */
+
+.button:disabled {
+  color: #E1E1E1;
+  background-color: #C1C1C1;;
+}
