@@ -10,19 +10,19 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header container">
       <a class="header-logo" href="../../index.html">
         <img src="../../images/logo.svg" alt="logo" />
       </a>
       <nav class="header-nav">
-        <ul>
-          <li><a href="#" class="nav-link">Blog</a></li>
-          <li><a href="/pages/category-products/index.html" class="nav-link">Catalog</a></li>
+        <ul class="header-nav__link-list">
+          <li><a href="../blog/index.html" class="nav-link">Blog</a></li>
+          <li><a href="../category-products/index.html" class="nav-link">Catalog</a></li>
           <li><a href="#" class="nav-link">About us</a></li>
         </ul>
-        <ul>
-          <li><a href="#" class="search"><img src="../../images/search.svg" class="search-icon" alt="search"/></a></li>
-          <li><a href="#" class="nav-link nav-link_bold">Contact us</a></li>
+        <ul class="header-nav__contacts">
+          <li><a href="#" class="search"><img src="../../images/search.svg" alt="search"/></a></li>
+          <li><a href="../contact-us/index.html" class="contact-link">Contact us</a></li>
         </ul>
       </nav>
     </header>
@@ -34,7 +34,7 @@
         <li><a href="../category-products/index.html" class="breadcrumbs-link">Catalog</a></li>
         <li class="breadcrumb">Toys</li>
       </ul>
-      <form class="toys-filter">
+      <form class="toys-filter form">
         <fieldset>
           <legend class="filter-legend">Cost</legend>
           <label>
@@ -88,7 +88,7 @@
       </form>
     </section>
     <section class="toy-slider">
-      <h2 class="title-hidden">Products display</h2>
+      <h2 class="hidden">Products display</h2>
       <article class="toy-slider__card">
         <a href="#" class="toy-slider__link">
           <img src="/images/shark-bag.jpg" alt="SHARKY BEAN BAG CHAIR COVER">

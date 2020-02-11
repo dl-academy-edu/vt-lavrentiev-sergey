@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact-us</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="../../common.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header container">
+    <a class="header-logo" href="../../index.html">
+      <img src="../../images/logo.svg" alt="logo" />
+    </a>
+    <nav class="header-nav">
+      <ul class="header-nav__link-list">
+        <li><a href="../blog/index.html" class="nav-link">Blog</a></li>
+        <li><a href="../category-products/index.html" class="nav-link">Catalog</a></li>
+        <li><a href="#" class="nav-link">About us</a></li>
+      </ul>
+      <ul class="header-nav__contacts">
+        <li><a href="#" class="search"><img src="../../images/search.svg" alt="search"/></a></li>
+        <li><a href="#" class="contact-link">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="contact-us container">
+      <h1 class="section-title">Contact us</h1>
+      <ul class="breadcrumbs">
+        <li class="inline"><a href="../../index.html" class="breadcrumbs-link">Home</a></li>
+        <li class="breadcrumb"> Contact us</li>
+      </ul>
+      <form class="form contact-us__form" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+        <label for="form-name" class="label">Name</label>
+        <input type="text" id="form-name" name="name" />
+  
+        <label for="form-phone" class="label">Phone</label>
+        <input type="text" id="form-phone" name="phone" value="+7" />
+  
+        <label for="form-email" class="label">Email</label>
+        <input type="email" id="form-email" name="email" />
+  
+        <label for="form-message" class="label">Message</label>
+        <textarea name="message" id="form-message"></textarea>
+  
+        <label for="form-accept" class="label">
+          By clicking on the button, you consent to the processing of
+          your personal data
+        </label>
+        <input type="checkbox" class="checkbox" name="accept" id="form-accept" value="accept" checked/>
+        <button class="button button-border" type="submit">
+          Submit
+        </button>
+      </form>
+      <p class="contact-us__text">
+        Our support team are on-hand to assist with any issues you are experiencing.
+      </p>
+      <p class="contact-us__text">
+        Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.
+      </p>
+      <p class="contact-us__upper-text">An expert is waiting to help you!</p>
+    </section>
+  </main>
+  <footer class="footer">
+    <h2 class="footer-title">Navigation</h2>
+    <ul class="navigation-list">
+      <li><a href="#" class="footer-links">About Us</a></li>
+      <li><a href="#" class="footer-links">Blog</a></li>
+      <li><a href="#" class="footer-links">Design Services</a></li>
+      <li><a href="#" class="footer-links">Featured On</a></li>
+      <li><a href="#" class="footer-links">2018 Holiday Catalog</a></li>
+      <li><a href="#" class="footer-links">Shop By Designer</a></li>
+    </ul>
+    <h2 class="footer-title">Customer Information</h2>
+    <ul class="customer-info-list">
+      <li><a href="#" class="footer-links">Contact Us</a></li>
+      <li><a href="#" class="footer-links">Sale Exclusions</a></li>
+      <li><a href="#" class="footer-links">Shipping & Returns</a></li>
+      <li><a href="#" class="footer-links">Terms & Conditions</a></li>
+      <li><a href="#" class="footer-links">Privacy Policy</a></li>
+      <li><a href="#" class="footer-links">Search</a></li>
+    </ul>
+    <h2 class="footer-title">Connect</h2>
+    <form class="footer-form">
+      <input type="email" class="footer-input" name="email" placeholder="Email" />
+      <button class="button button-border" type="submit">
+        Join
+      </button>
+    </form>
+    <ul class="social-list">
+      <li><a href="#" class="social-link"><img src="../../images/Facebook.svg" alt="Facebook" /></a></li>
+      <li><a href="#" class="social-link"><img src="../../images/Twitter.svg" alt="Twitter" /></a></li>
+      <li><a href="#" class="social-link"><img src="../../images/Pinterest.svg" alt="Pinterest" /></a></li>
+      <li><a href="#" class="social-link"><img src="../../images/Instagram.svg" alt="Instagram" /></a></li>
+    </ul>
+    <div class="company-info">
+      <div class="rating">
+        <p>Company Rating</p>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+      </div>
+      <p class="copyright">
+        Copyright © 2018 Dlk • Design Life Kids
+      </p>
+      <p class="design-company">
+        Web Design — <a href="#">Direct Line Development</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

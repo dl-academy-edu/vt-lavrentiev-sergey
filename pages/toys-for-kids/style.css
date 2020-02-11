@@ -1,5 +1,7 @@
 .toys-filter {
-  background-color: rgba(125, 151, 218, 0.2);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .filter-legend {
@@ -12,9 +14,7 @@
 .filter-color,
 .filter-delivery,
 .filter-amount {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 22px;
+
 }
 
 .card-title a {

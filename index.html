@@ -10,26 +10,26 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header container">
       <a class="header-logo" href="#">
         <img src="images/logo.svg" alt="logo" />
       </a>
       <nav class="header-nav">
-        <ul>
+        <ul class="header-nav__link-list">
           <li><a href="pages/blog/index.html" class="nav-link">Blog</a></li>
           <li><a href="pages/category-products/index.html" class="nav-link">Catalog</a></li>
           <li><a href="#" class="nav-link">About us</a></li>
         </ul>
-        <ul>
-          <li><a href="#" class="search"><img src="images/search.svg" class="search-icon" alt="search"/></a></li>
-          <li><a href="#" class="nav-link nav-link_bold">Contact us</a></li>
+        <ul class="header-nav__contacts">
+          <li><a href="#" class="search"><img src="images/search.svg" alt="search"/></a></li>
+          <li><a href="pages/contact-us/index.html" class="contact-link">Contact us</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="hero-slider">
-        <img src="images/poster.png" alt="poster" />
-        <h1 class="title-hidden">Design Kids Life Collection</h1>
+      <section class="hero-slider container">
+        <img class="poster" src="images/poster.png" alt="poster" />
+        <h1 class="hidden">Design Kids Life Collection</h1>
         <p class="hero-slider__number">01</p>
         <ul class="hero-slider__nav">
           <li><button class="slider-button slider-button_selected"></button></li>
@@ -47,13 +47,13 @@
           more!
         </p>
       </section>
-      <section class="category">
+      <section class="category container">
         <h2 class="block-title">Category Products</h2>
         <ul class="category-list">
           <li>
             <a href="#" class="category-products">
               <img src="images/product-1.jpg" alt="Apparel kids"/>
-              APPAREL KIDS
+              <span class=".category-products__text">APPAREL KIDS</span>
             </a>
           </li>
           <li>
@@ -91,31 +91,33 @@
           </p>
         </div>
       </section>
-      <section class="services">
+      <section class="services container">
         <img src="images/Delivery.jpg" alt="lady" />
-        <h2 class="block-title">Delivery</h2>
-        <ul class="services-list">
-          <li><button class="services-button services-button_active">Delivery</button></li>
-          <li><button class="services-button">Guarantee</button></li>
-          <li><button class="services-button">Credit</button></li>
-        </ul>
-        <div class="services-text">
-          <p>
-            Some days i feel like i've been working on dlk my entire
-            life and there are other days that i am completely shocked
-            that four years have flown by. It's simply magical.
-          </p>
-          <p>
-            What started as an outlet to deal with the traumatic loss
-            of my husband, dlk has now become a truly happy place for
-            me and i have you and all of the beautiful designers that
-            we work with to thank!
-          </p>
+        <div class="services-wrapper">
+          <h2 class="block-title services-title">Delivery</h2>
+          <ul class="services-list">
+            <li><button class="services-button services-button_active">Delivery</button></li>
+            <li><button class="services-button">Guarantee</button></li>
+            <li><button class="services-button">Credit</button></li>
+          </ul>
+          <div class="services-text">
+            <p>
+              Some days i feel like i've been working on dlk my entire
+              life and there are other days that i am completely shocked
+              that four years have flown by. It's simply magical.
+            </p>
+            <p>
+              What started as an outlet to deal with the traumatic loss
+              of my husband, dlk has now become a truly happy place for
+              me and i have you and all of the beautiful designers that
+              we work with to thank!
+            </p>
+          </div>
+          <a href="#" class="button">Learn more</a>
         </div>
-        <a href="#" class="button">Learn more</a>
       </section>
-      <section class="partners">
-        <h2 class="title-hidden">Partners</h2>
+      <section class="partners container">
+        <h2 class="hidden">Partners</h2>
         <ul class="partner-list">
           <li><a href="#"><img src="/images/partner-1.png" alt="Mail.ru"/></a></li>
           <li><a href="#"><img src="/images/partner-2.png" alt="apple"/></a></li>
@@ -124,75 +126,83 @@
         </ul>
       </section>
     </main>
-    <article class="about">
-      <h2 class="block-title">Design Life Kids</h2>
-      <div class="about-subtitle">About Us</div>
-      <p class="about-text">
-        Some days i feel like i've been working on dlk my entire life
-        and there are other days that i am completely shocked that
-        four years have flown by. It's simply magical.
-      </p>
-      <a href="#" class="button button_black">Buy Now</a>
-    </article>
-    <article class="contacts">
-      <h2 class="block-title">Contacts</h2>
-      <p class="contacts-text">
-        Some days i feel like i've been working on dlk my entire life
-        and there are other days that i am completely shocked that
-        four years have flown by. It's simply magical.
-      </p>
-      <img class="map" src="map.png" alt="map" />
-    </article>
+    <div class="container">
+      <article class="about">
+        <h2 class="block-title">Design Life Kids</h2>
+        <div class="about-subtitle">About Us</div>
+        <p class="about-text">
+          Some days i feel like i've been working on dlk my entire life
+          and there are other days that i am completely shocked that
+          four years have flown by. It's simply magical.
+        </p>
+        <a href="#" class="button button_black">Buy Now</a>
+      </article>
+      <article class="contacts">
+        <h2 class="block-title">Contacts</h2>
+        <p class="contacts-text">
+          Some days i feel like i've been working on dlk my entire life
+          and there are other days that i am completely shocked that
+          four years have flown by. It's simply magical.
+        </p>
+        <img class="map" src="map.png" alt="map" />
+      </article>
+    </div>
     <footer class="footer">
-      <h2 class="footer-title">Navigation</h2>
-      <ul class="navigation-list">
-        <li><a href="#" class="footer-links">About Us</a></li>
-        <li><a href="#" class="footer-links">Blog</a></li>
-        <li><a href="#" class="footer-links">Design Services</a></li>
-        <li><a href="#" class="footer-links">Featured On</a></li>
-        <li><a href="#" class="footer-links">2018 Holiday Catalog</a></li>
-        <li><a href="#" class="footer-links">Shop By Designer</a></li>
-      </ul>
-      <h2 class="footer-title">Customer Information</h2>
-      <ul class="customer-info-list">
-        <li><a href="#" class="footer-links">Contact Us</a></li>
-        <li><a href="#" class="footer-links">Sale Exclusions</a></li>
-        <li><a href="#" class="footer-links">Shipping & Returns</a></li>
-        <li><a href="#" class="footer-links">Terms & Conditions</a></li>
-        <li><a href="#" class="footer-links">Privacy Policy</a></li>
-        <li><a href="#" class="footer-links">Search</a></li>
-      </ul>
-      <h2 class="footer-title">Connect</h2>
-      <form class="footer-form">
-        <input type="email" class="footer-input" name="email" placeholder="Email" />
-        <button class="button button-border" type="submit">
-          Join
-        </button>
-      </form>
-      <ul class="social-list">
-        <li><a href="#" class="social-link"><img src="images/Facebook.svg" alt="Facebook" /></a></li>
-        <li><a href="#" class="social-link"><img src="images/Twitter.svg" alt="Twitter" /></a></li>
-        <li><a href="#" class="social-link"><img src="images/Pinterest.svg" alt="Pinterest" /></a></li>
-        <li><a href="#" class="social-link"><img src="images/Instagram.svg" alt="Instagram" /></a></li>
-      </ul>
-      <div class="company-info">
-        <div class="rating">
-          <p>Company Rating</p>
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
+      <div class="footer-wrapper container">
+        <div class="footer-section">
+          <h2 class="footer-title">Navigation</h2>
+          <ul class="navigation-list">
+            <li><a href="#" class="footer-links">About Us</a></li>
+            <li><a href="#" class="footer-links">Blog</a></li>
+            <li><a href="#" class="footer-links">Design Services</a></li>
+            <li><a href="#" class="footer-links">Featured On</a></li>
+            <li><a href="#" class="footer-links">2018 Holiday Catalog</a></li>
+            <li><a href="#" class="footer-links">Shop By Designer</a></li>
+          </ul>
+          <div class="rating">
+            <p>Company Rating</p>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
         </div>
-        <p class="copyright">
-          Copyright © 2018 Dlk • Design Life Kids
-        </p>
-        <p class="design-company">
-          Web Design — <a href="#">Direct Line Development</a>
-        </p>
+        <div class="footer-section">
+          <h2 class="footer-title">Customer Information</h2>
+          <ul class="customer-info-list">
+            <li><a href="#" class="footer-links">Contact Us</a></li>
+            <li><a href="#" class="footer-links">Sale Exclusions</a></li>
+            <li><a href="#" class="footer-links">Shipping & Returns</a></li>
+            <li><a href="#" class="footer-links">Terms & Conditions</a></li>
+            <li><a href="#" class="footer-links">Privacy Policy</a></li>
+            <li><a href="#" class="footer-links">Search</a></li>
+          </ul>
+          <p class="copyright">
+            Copyright © 2018 Dlk • Design Life Kids
+          </p>
+        </div>
+        <div class="footer-section">
+          <h2 class="footer-title">Connect</h2>
+          <form class="footer-form">
+            <input type="email" class="footer-input" name="email" placeholder="Email" />
+            <button class="button button-border" type="submit">
+              Join
+            </button>
+          </form>
+          <ul class="social-list">
+            <li><a href="#" class="social-link"><img src="images/Facebook.svg" alt="Facebook" /></a></li>
+            <li><a href="#" class="social-link"><img src="images/Twitter.svg" alt="Twitter" /></a></li>
+            <li><a href="#" class="social-link"><img src="images/Pinterest.svg" alt="Pinterest" /></a></li>
+            <li><a href="#" class="social-link"><img src="images/Instagram.svg" alt="Instagram" /></a></li>
+          </ul>
+          <p class="design-company">
+            Web Design — <a href="#">Direct Line Development</a>
+          </p>
+        </div>
       </div>
     </footer>
-    <form class="modal-window" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+    <form class="modal-window form" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
       <label for="form-name" class="label">Name</label>
       <input type="text" id="form-name" name="name" />
 

@@ -12,6 +12,10 @@ a {
   color: #1E0606;
 }
 
+ul {
+  padding-left: 0;
+}
+
 li {
   list-style-type: none;
 }
@@ -28,6 +32,13 @@ html {
 
 img { 
   max-width: 100%; 
+}
+
+.container {
+  width: 100%;
+  max-width: 1220px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 /* titles */
@@ -48,10 +59,56 @@ img {
   text-transform: uppercase;
 }
 
-.title-hidden {
-  visibility: hidden;
+.hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important; 
+  width: 1px !important; 
+  overflow: hidden;
 }
+
 /* header */
+
+.header {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  align-items: center;
+}
+
+.header-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  width: 100px;
+  min-width: 100px;
+  min-height: 50px;
+  height: 50px;
+}
+
+.header-nav__link-list {
+  display: flex;
+  margin-left: 60px;
+  align-items: center;
+}
+
+.header-nav__contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-link {
+  font-weight: bold;
+  margin-left: 23.45px;
+}
 
 .nav-link {
   font-family: 'Open Sans', sans-serif;
@@ -60,15 +117,9 @@ img {
   text-transform: uppercase;
   cursor: pointer;
 
+  margin-right: 20px;
+
   color: #1E0606;
-}
-
-.search {
-  fill: #000000;
-}
-
-.nav-link_bold {
-  font-weight: bold;
 }
 
 /* footer */
@@ -77,8 +128,21 @@ footer {
   color: #FFFFFF;
 }
 
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer-title {
   color: #C4C4C4;
+}
+
+.social-list {
+  display: flex;
+}
+
+.social-link {
+  margin-right: 10px;
 }
 
 .footer-links {
@@ -94,6 +158,7 @@ footer {
   border: none;
   color: #FFFFFF;
   background-color: #1E0606;
+  padding: 9px 22px;
 }
 
 .footer-input {
@@ -151,7 +216,7 @@ opacity: 0.5;
   font-weight: bold;
 }
 
-.nav-link_bold:active {
+.contact-link:hover {
   font-weight: 400;
 }
 
@@ -164,4 +229,15 @@ opacity: 0.5;
 .button:disabled {
   color: #E1E1E1;
   background-color: #C1C1C1;;
+}
+
+/* form */
+
+.form {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: #E5EAF8;
+  
+  color: #1E0606;
 }
