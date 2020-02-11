@@ -81,6 +81,28 @@
   transform: rotate(-135deg);
 } */
 
+.services {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.services-wrapper {
+  padding-left: 120px;
+  padding-top: 30px;
+}
+
+.services-title {
+  padding-bottom: 17px;
+}
+
+
+.partner-list {
+  display: flex;
+  justify-content: space-between;
+  
+  margin-top: 91px;
+}
 
 .services-button {
   font-family: 'Crimson Text';
@@ -89,6 +111,7 @@
   font-size: 26px;
   line-height: 32px;
   border: none;
+  padding-bottom: 22px;
 
   background-color: #FFFFFF;
 }
