@@ -106,8 +106,9 @@ img {
 }
 
 .contact-link {
-  font-weight: bold;
+  text-shadow: 1px 0 0 #1E0606;
   margin-left: 23.45px;
+  text-transform: uppercase;
 }
 
 .nav-link {
@@ -181,6 +182,10 @@ footer {
 
 /* breadcrumbs */
 
+.breadcrumbs {
+  display:  block;
+}
+
 .breadcrumb {
 font-family: Crimson Text;
 font-style: italic;
@@ -200,10 +205,20 @@ opacity: 0.5;
   color: #1E0606;
 }
 
+.breadcrumbs-item {
+  display: inline-block;
+}
+
+.breadcrumbs-item:not(:last-of-type)::after {
+  content: ">";
+  margin: 0 20px;
+  color: #1E0606;
+}
+
 /* hover */
 
 .nav-link:hover {
-  font-weight: 600;
+  text-shadow: 1px 0 0 #1E0606
 }
 
 .button:hover {
