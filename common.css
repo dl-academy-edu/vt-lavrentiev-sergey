@@ -133,15 +133,56 @@ footer {
 
 .footer-wrapper {
   display: flex;
-  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 0 1 33.333%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
 }
 
 .footer-title {
-  color: #C4C4C4;
+  
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  
+  color: #AAAAAA;
+  
+  margin-bottom: 52px;
+  position: relative;
+}
+
+.footer-title::before {
+  content: "";
+  height: 1px;
+  width: 380px;
+  top: 45px;
+  left: 0;
+
+
+  background-color: #666666;
+  position: absolute;
+}
+
+.footer-title::after {
+  content: "";
+  height: 1px;
+  width: 380px;
+  top: 310px;
+  left: 0;
+
+
+  background-color: #666666;
+  position: absolute;
 }
 
 .social-list {
   display: flex;
+  margin-top: 0;
+  margin-bottom: 172px;
 }
 
 .social-link {
@@ -149,7 +190,15 @@ footer {
 }
 
 .footer-links {
+  display: inline-block;
+  margin-bottom: 15px;
+
   color: #FFFFFF;
+}
+
+.navigation-list,
+.customer-info-list {
+  margin-bottom: 52px;
 }
 
 .button {
@@ -165,18 +214,32 @@ footer {
   padding: 9px 22px;
 }
 
+.footer-form {
+  display: inline-block;
+  width: 380px;
+  margin-bottom: 25px;
+}
+
 .footer-input {
+  display: inline-block;
+  outline: none;
   background-color: #666666;;
   border: none;
+  height: 40px;
+  width: 298px;
+
 }
 
 ::placeholder {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 22px;
+  padding-left: 15px;
 
   color: #EBEBEB;
 }
+
+
 
 .design-company,
 .design-company a {
