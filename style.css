@@ -2,7 +2,7 @@
   position: relative;
   max-width: 100%;
   width: 100%;
-  min-height: 461px;
+  min-height: 460px;
 }
 
 .hero-slider__nav {
@@ -29,19 +29,20 @@
 .hero-slider__content {
   margin-top: 178px;
   width: 100%;
-  max-width: 100%;
+  max-width: 310px;
   margin-left: 133px;
+  margin-bottom: 20px;
 }
 
 .hero-slider__item-thumb {
   align-self: flex-end;
-  margin-right: 100px;
   max-width: 100%;
+  display: flex;
+  align-items: flex-end;
 }
 
 .poster {
-  max-width: 635px;
-  max-height: 461px;
+  max-width: 100%;
 }
 
 .hero-slider__number {
@@ -51,11 +52,16 @@
   line-height: 73px;
 
   width: 80px;
-  flex-basis: 100%;
-  margin: 0;
-  
+  margin: 0px 0px 10px;
+  padding: 0;
   
   color: rgba(30, 6, 6, 0.05);
+}
+
+.nav-btn__item {
+  display: flex;
+  padding: 0;
+  margin-bottom: 11px;
 }
 
 .slider-button {
@@ -63,6 +69,7 @@
   height: 3px;
   border: none;
   background-color: #D6CAC2;
+  cursor: pointer;
 }
 
 .slider-button_selected {
@@ -99,15 +106,75 @@
 
   padding-top: 10px;
   padding-bottom: 10px;
-  margin: 0;
+  margin: 0px 0px 90px ;
 
   color: #FFFFFF;
   background-color: #C29974;
 }
 
-.category-products {
-  font-family: 'Montserrat';
+/* Category Products */
 
+.category-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.category-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  width: 280px;
+  min-height: 270px;
+}
+
+.categoty-list__bg-apparel {
+  background-color: #DBE4DB;
+  background-image: url(images/product-1.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-blend-mode: multiply;
+}
+
+.categoty-list__bg-holiday {
+  background-color: rgba(186, 142, 107, 0.3);
+  background-image: url(images/product-2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-blend-mode: multiply;
+}
+
+.categoty-list__bg-toys {
+  background-color: #F8F2DA;
+  background-image: url(images/product-3.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-blend-mode: multiply;
+}
+
+.categoty-list__bg-accessories {
+  background-color: rgba(9, 3, 79, 0.17);
+  background-image: url(images/product-4.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-blend-mode: multiply;
+}
+
+.category-products__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.category-products {
+
+  font-family: 'Montserrat';
   font-weight: bold;
   font-size: 26px;
   line-height: 32px;
@@ -118,25 +185,59 @@
   text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
 }
 
-/* .arrow {
+.category-description {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 90px;
+}
+
+.categoty-description__button {
+  display: flex;
+  width: 80px;
+  justify-content: space-between;
+  margin-right: 20px;  
+}
+
+.arrow {
+  position: relative;
   width: 37px;
   height: 37px;
   background-color: rgba(112, 187, 220, 0.2);
+  border: none;
 }
 
-.arrow-left {
-
+.arrow_left {
+  display: inline-block;
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  transform: translate (-50%, -500%);
+  width: 18px;
+  height: 18px;
   border-bottom: 4px solid #1E0606;
   border-left: 4px solid #1E0606;
   transform: rotate(45deg);
 }
 
-.arrow-right {
-
+.arrow_right {
+  display: inline-block;
+  position: absolute;
+  top: 25%;
+  right: 35%;
+  transform: translate (-50%, -500%);
+  width: 18px;
+  height: 18px;
   border-bottom: 4px solid #1E0606;
   border-right: 4px solid #1E0606;
-  transform: rotate(-135deg);
-} */
+  transform: rotate(-45deg);
+}
+
+.category-description__text {
+  width: 560px;
+}
+
+/* services */
 
 .services {
   display: flex;
@@ -153,28 +254,38 @@
   padding-bottom: 17px;
 }
 
-
-.partner-list {
-  display: flex;
-  justify-content: space-between;
-  
-  margin-top: 91px;
-}
-
 .services-button {
+  position: relative;
   font-family: 'Crimson Text';
   font-style: italic;
   font-weight: bold;
   font-size: 26px;
   line-height: 32px;
   border: none;
-  padding-bottom: 22px;
+  padding: 0 0 22px;
 
   background-color: #FFFFFF;
 }
 
-.services-button_active {
-  background-color: rgba(112, 187, 220, 0.2);
+.services-button_active::before {
+  content: "";
+  position: absolute;
+  width: 326px;
+  height: 55px;
+  background: rgba(112, 187, 220, 0.2);
+  right: -180px;
+  bottom: 10px;
+}
+
+.services-btn__learn {
+  margin-top: 26px;
+}
+
+.partner-list {
+  display: flex;
+  justify-content: space-between;
+  
+  margin-top: 91px;
 }
 
 .about-subtitle {

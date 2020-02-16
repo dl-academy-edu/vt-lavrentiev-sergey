@@ -57,6 +57,7 @@ img {
   font-size: 38px;
   line-height: 46px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .hidden {
@@ -84,6 +85,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .header-logo {
@@ -151,6 +153,7 @@ footer {
 }
 
 .button {
+  display: inline-flex;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   font-size: 16px;
