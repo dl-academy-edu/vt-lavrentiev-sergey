@@ -57,7 +57,6 @@ img {
   font-size: 38px;
   line-height: 46px;
   text-transform: uppercase;
-  margin: 0;
 }
 
 .hidden {
@@ -129,17 +128,68 @@ img {
 footer {
   background: #434343;
   color: #FFFFFF;
+  padding: 100px 0;
 }
 
 .footer-wrapper {
   display: flex;
+  justify-content: space-between;
 }
 
 .footer-section {
-  flex: 0 1 33.333%;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  flex-wrap: wrap;
+  width: 380px;
+  min-height: 280px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.footer-section__connect {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  position: relative;
+}
+
+.footer-section::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 380px;
+  background-color: #666666;
+  top: 50px;
+  left: 0;
+}
+.footer-section__connect::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 380px;
+  background-color: #666666;
+  top: 50px;
+  left: 0;
+}
+
+.footer-section::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 380px;
+  background-color: #666666;
+  bottom: 50px;
+  left: 0;
+}
+.footer-section__connect::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 380px;
+  background-color: #666666;
+  bottom: 50px;
+  left: 0;
 }
 
 .footer-title {
@@ -151,42 +201,14 @@ footer {
   
   color: #AAAAAA;
   
-  margin-bottom: 52px;
+  margin-bottom: 50px;
   position: relative;
 }
 
-.footer-title::before {
-  content: "";
-  height: 1px;
-  width: 380px;
-  top: 45px;
-  left: 0;
-
-
-  background-color: #666666;
-  position: absolute;
-}
-
-.footer-title::after {
-  content: "";
-  height: 1px;
-  width: 380px;
-  top: 310px;
-  left: 0;
-
-
-  background-color: #666666;
-  position: absolute;
-}
-
 .social-list {
+  flex-grow: 1;
   display: flex;
   margin-top: 0;
-  margin-bottom: 172px;
-}
-
-.social-link {
-  margin-right: 10px;
 }
 
 .footer-links {
@@ -194,11 +216,6 @@ footer {
   margin-bottom: 15px;
 
   color: #FFFFFF;
-}
-
-.navigation-list,
-.customer-info-list {
-  margin-bottom: 52px;
 }
 
 .button {
@@ -239,7 +256,28 @@ footer {
   color: #EBEBEB;
 }
 
+.social-link {
+  margin-right: 15px;
+}
 
+.rating {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.company-rating {
+  margin-right: 25px;
+}
+
+.star {
+  margin-right: 3px;
+}
+
+.copyright {
+  margin-top: 50px;
+}
 
 .design-company,
 .design-company a {
