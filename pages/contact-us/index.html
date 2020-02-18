@@ -29,8 +29,8 @@
     <section class="contact-us container">
       <h1 class="section-title">Contact us</h1>
       <ul class="breadcrumbs">
-        <li class="inline"><a href="../../index.html" class="breadcrumbs-link">Home</a></li>
-        <li class="breadcrumb"> Contact us</li>
+        <li class="breadcrumbs-item"><a href="../../index.html" class="breadcrumbs-link">Home</a></li>
+        <li class="breadcrumb breadcrumbs-item"> Contact us</li>
       </ul>
       <form class="form contact-us__form" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
         <label for="form-name" class="label">Name</label>
@@ -64,52 +64,58 @@
     </section>
   </main>
   <footer class="footer">
-    <h2 class="footer-title">Navigation</h2>
-    <ul class="navigation-list">
-      <li><a href="#" class="footer-links">About Us</a></li>
-      <li><a href="#" class="footer-links">Blog</a></li>
-      <li><a href="#" class="footer-links">Design Services</a></li>
-      <li><a href="#" class="footer-links">Featured On</a></li>
-      <li><a href="#" class="footer-links">2018 Holiday Catalog</a></li>
-      <li><a href="#" class="footer-links">Shop By Designer</a></li>
-    </ul>
-    <h2 class="footer-title">Customer Information</h2>
-    <ul class="customer-info-list">
-      <li><a href="#" class="footer-links">Contact Us</a></li>
-      <li><a href="#" class="footer-links">Sale Exclusions</a></li>
-      <li><a href="#" class="footer-links">Shipping & Returns</a></li>
-      <li><a href="#" class="footer-links">Terms & Conditions</a></li>
-      <li><a href="#" class="footer-links">Privacy Policy</a></li>
-      <li><a href="#" class="footer-links">Search</a></li>
-    </ul>
-    <h2 class="footer-title">Connect</h2>
-    <form class="footer-form">
-      <input type="email" class="footer-input" name="email" placeholder="Email" />
-      <button class="button button-border" type="submit">
-        Join
-      </button>
-    </form>
-    <ul class="social-list">
-      <li><a href="#" class="social-link"><img src="../../images/Facebook.svg" alt="Facebook" /></a></li>
-      <li><a href="#" class="social-link"><img src="../../images/Twitter.svg" alt="Twitter" /></a></li>
-      <li><a href="#" class="social-link"><img src="../../images/Pinterest.svg" alt="Pinterest" /></a></li>
-      <li><a href="#" class="social-link"><img src="../../images/Instagram.svg" alt="Instagram" /></a></li>
-    </ul>
-    <div class="company-info">
-      <div class="rating">
-        <p>Company Rating</p>
-        <span class="star">&#9733;</span>
-        <span class="star">&#9733;</span>
-        <span class="star">&#9733;</span>
-        <span class="star">&#9733;</span>
-        <span class="star">&#9733;</span>
+    <div class="footer-wrapper container">
+      <div class="footer-section">
+        <h2 class="footer-title">Navigation</h2>
+        <ul class="navigation-list">
+          <li><a href="#" class="footer-links">About Us</a></li>
+          <li><a href="#" class="footer-links">Blog</a></li>
+          <li><a href="#" class="footer-links">Design Services</a></li>
+          <li><a href="#" class="footer-links">Featured On</a></li>
+          <li><a href="#" class="footer-links">2018 Holiday Catalog</a></li>
+          <li><a href="#" class="footer-links">Shop By Designer</a></li>
+        </ul>
+        <div class="rating">
+          <p>Company Rating</p>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+        </div>
       </div>
-      <p class="copyright">
-        Copyright © 2018 Dlk • Design Life Kids
-      </p>
-      <p class="design-company">
-        Web Design — <a href="#">Direct Line Development</a>
-      </p>
+      <div class="footer-section">
+        <h2 class="footer-title">Customer Information</h2>
+        <ul class="customer-info-list">
+          <li><a href="#" class="footer-links">Contact Us</a></li>
+          <li><a href="#" class="footer-links">Sale Exclusions</a></li>
+          <li><a href="#" class="footer-links">Shipping & Returns</a></li>
+          <li><a href="#" class="footer-links">Terms & Conditions</a></li>
+          <li><a href="#" class="footer-links">Privacy Policy</a></li>
+          <li><a href="#" class="footer-links">Search</a></li>
+        </ul>
+        <p class="copyright">
+          Copyright © 2018 Dlk • Design Life Kids
+        </p>
+      </div>
+      <div class="footer-section">
+        <h2 class="footer-title">Connect</h2>
+        <form class="footer-form">
+          <input type="email" class="footer-input" name="email" placeholder="Email" />
+          <button class="button button-border" type="submit">
+            Join
+          </button>
+        </form>
+        <ul class="social-list">
+          <li><a href="#" class="social-link"><img src="../../images/Facebook.svg" alt="Facebook" /></a></li>
+          <li><a href="#" class="social-link"><img src="../../images/Twitter.svg" alt="Twitter" /></a></li>
+          <li><a href="#" class="social-link"><img src="../../images/Pinterest.svg" alt="Pinterest" /></a></li>
+          <li><a href="#" class="social-link"><img src="../../images/Instagram.svg" alt="Instagram" /></a></li>
+        </ul>
+        <p class="design-company">
+          Web Design — <a href="#">Direct Line Development</a>
+        </p>
+      </div>
     </div>
   </footer>
 </body>
