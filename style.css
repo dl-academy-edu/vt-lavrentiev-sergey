@@ -204,7 +204,6 @@
   display: inline-flex;
   align-items: center;
   margin-top: 30px;
-  margin-bottom: 90px;
 }
 
 .categoty-description__button {
@@ -392,7 +391,7 @@
   background-color: rgba(125, 151, 218, 0.8);
   height: 100vh;
   width: 100vw;
-  display: flex;
+  display: none;
 }
 
 .modal-window {
