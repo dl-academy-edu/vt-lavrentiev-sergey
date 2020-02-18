@@ -262,6 +262,10 @@
   padding-bottom: 50px;
 }
 
+.services-image {
+  object-fit: cover;
+}
+
 .services-wrapper {
   padding: 30px 110px 60px 120px;
 }
@@ -382,11 +386,106 @@
 
 /* modal */
 
+.modal-window__bg {
+  position: fixed;
+  top: 0;
+  background-color: rgba(125, 151, 218, 0.8);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
 .modal-window {
+  position: relative;
+  margin: auto;
+  padding: 42px 40px;
+
+  background-color: #E5EAF8;
+  display: flex;
+  flex-direction: column;
+  width: 680px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.label {
+  position: relative;
+  padding-top: 22px;
+  padding-bottom: 20px;
+}
+
+.modal-window__input {
+  height: 50px;
+  padding-left: 15px;
   font-family: Roboto;
   font-size: 14px;
   line-height: 16px;
-  background-color: #E5EAF8;
-  
+
   color: #1E0606;
 }
+
+.modal-window__message {
+  position: relative;
+  padding-top: 22px;
+  
+}
+
+.label-input__name {
+  width: 600px;
+}
+
+.label-input__phone {
+  width: 290px;
+}
+
+.label-input__email {
+  width: 290px;
+}
+
+.label-message {
+  width: 600px;
+  height: 150px;
+}
+
+.input-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #1E0606;
+}
+
+.checkbox-text {
+  padding-bottom: 20px;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #1E0606;
+}
+
+.modal-window__button {
+  align-self: baseline;
+}
+
+.form-close {
+  position: absolute;
+  top: -5px;
+  right: -30px;
+  font-size: 24px;
+  color: #FFFFFF;
+  
+  border: none;
+  background-color: transparent;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+

@@ -163,6 +163,7 @@ footer {
   top: 50px;
   left: 0;
 }
+
 .footer-section__connect::before {
   content: "";
   position: absolute;
@@ -182,6 +183,7 @@ footer {
   bottom: 50px;
   left: 0;
 }
+
 .footer-section__connect::after {
   content: "";
   position: absolute;
@@ -229,11 +231,12 @@ footer {
   color: #FFFFFF;
   background-color: #1E0606;
   padding: 9px 22px;
+  cursor: pointer;
 }
 
 .footer-form {
   display: inline-block;
-  width: 380px;
+  max-width: 380px;
   margin-bottom: 25px;
 }
 
@@ -244,6 +247,7 @@ footer {
   border: none;
   height: 40px;
   width: 298px;
+  padding: 9px 15px;
 
 }
 
@@ -251,7 +255,6 @@ footer {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 22px;
-  padding-left: 15px;
 
   color: #EBEBEB;
 }
@@ -348,15 +351,4 @@ opacity: 0.5;
 .button:disabled {
   color: #E1E1E1;
   background-color: #C1C1C1;;
-}
-
-/* form */
-
-.form {
-  font-family: Roboto;
-  font-size: 14px;
-  line-height: 16px;
-  background-color: #E5EAF8;
-  
-  color: #1E0606;
 }
