@@ -1,3 +1,5 @@
+
+
 .category-products {
   font-family: 'Montserrat';
 
@@ -9,4 +11,25 @@
 
   color: #FFFFFF;
   text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+}
+
+.category-products__list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  
+  padding-top: 20px;
+  margin-bottom: 0;
+
+}
+
+.category-list__item  {
+  margin-bottom: 23px;
+  margin-right: 20px;
+}
+
+.products-description {
+  width: 720px;
+  padding: 0px 20px 40px 20px;
+  margin: 0 auto;
 }
