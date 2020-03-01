@@ -32,35 +32,44 @@
         <li class="breadcrumbs-item"><a href="../../index.html" class="breadcrumbs-link">Home</a></li>
         <li class="breadcrumb breadcrumbs-item"> Contact us</li>
       </ul>
-      <form class="form contact-us__form" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
-        <label for="form-name" class="label">Name</label>
-        <input type="text" id="form-name" name="name" />
-  
-        <label for="form-phone" class="label">Phone</label>
-        <input type="text" id="form-phone" name="phone" value="+7" />
-  
-        <label for="form-email" class="label">Email</label>
-        <input type="email" id="form-email" name="email" />
-  
-        <label for="form-message" class="label">Message</label>
-        <textarea name="message" id="form-message"></textarea>
-  
-        <label for="form-accept" class="label">
-          By clicking on the button, you consent to the processing of
-          your personal data
-        </label>
-        <input type="checkbox" class="checkbox" name="accept" id="form-accept" value="accept" checked/>
-        <button class="button button-border" type="submit">
-          Submit
-        </button>
-      </form>
-      <p class="contact-us__text">
-        Our support team are on-hand to assist with any issues you are experiencing.
-      </p>
-      <p class="contact-us__text">
-        Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.
-      </p>
-      <p class="contact-us__upper-text">An expert is waiting to help you!</p>
+      <div class="contact-us__section">
+        <form class="modal-window" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+          <label class="label">
+            <input type="text" class="modal-window__input label-input__name" name="name" placeholder="Ivan Ivanov">
+            <span class="input-text">Name</span>
+          </label>
+          <div class="label-row">
+            <label class="label">
+              <input type="text" class="modal-window__input label-input__phone" name="phone" value="+7">
+              <span class="input-text">Phone</span>
+            </label>
+            <label class="label">
+              <input type="email" class="modal-window__input label-input__email" name="email">
+              <span class="input-text">Email</span>
+            </label>
+          </div>
+          <label class="modal-window__message">
+            <textarea name="message" class="label-message"></textarea>
+            <span class="input-text">Message</span>
+          </label>
+          <label class="label">
+            <input type="checkbox" class="label-input" name="accept" value="accept">
+            <span class="checkbox-text">By clicking on the button, you consent to the processing of your personal data</span>
+          </label>
+          <button class="button modal-window__button" type="submit">
+            Submit
+          </button>
+        </form>
+        <div class="contact-us__text-wrapper">
+          <p class="contact-us__text">
+            Our support team are on-hand to assist with any issues you are experiencing.
+          </p>
+          <p class="contact-us__text">
+            Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.
+          </p>
+          <p class="contact-us__upper-text">An expert is waiting to help you!</p>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="footer">
@@ -76,13 +85,13 @@
           <li><a href="#" class="footer-links">Shop By Designer</a></li>
         </ul>
         <div class="rating">
-          <p>Company Rating</p>
+          <p class="company-rating">Company Rating</p>
           <span class="star">&#9733;</span>
           <span class="star">&#9733;</span>
           <span class="star">&#9733;</span>
           <span class="star">&#9733;</span>
           <span class="star">&#9733;</span>
-        </div>
+        </div>        
       </div>
       <div class="footer-section">
         <h2 class="footer-title">Customer Information</h2>
@@ -98,11 +107,10 @@
           Copyright © 2018 Dlk • Design Life Kids
         </p>
       </div>
-      <div class="footer-section">
+      <div class="footer-section__connect">
         <h2 class="footer-title">Connect</h2>
         <form class="footer-form">
-          <input type="email" class="footer-input" name="email" placeholder="Email" />
-          <button class="button button-border" type="submit">
+          <input type="email" class="footer-input" name="email" placeholder="Email"/><button class="button footer-btn" type="submit">
             Join
           </button>
         </form>
@@ -114,7 +122,7 @@
         </ul>
         <p class="design-company">
           Web Design — <a href="#">Direct Line Development</a>
-        </p>
+        </p>       
       </div>
     </div>
   </footer>
