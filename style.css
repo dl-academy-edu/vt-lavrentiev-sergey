@@ -81,6 +81,13 @@
   background-color: rgba(30, 6, 6, 0.6);
 }
 
+.slider-button:hover {
+  width: 31px;
+  height: 3px;
+  border: none;
+  background: #725F5B;
+}
+
 .hero-slider__title {
   font-family: 'Montserrat';
   font-weight: bold;
@@ -211,6 +218,7 @@
   line-height: 32px;
   border: none;
   padding: 0 0 22px;
+  cursor: pointer;
 
   background-color: #FFFFFF;
 }

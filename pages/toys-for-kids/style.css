@@ -75,6 +75,10 @@ fieldset {
   align-items: center;
 }
 
+.color-label:hover .input__text {
+  text-decoration: underline;
+}
+
 .filter-checkbox {
   display: block;
 
@@ -86,15 +90,19 @@ fieldset {
   border-radius: 3px;
   cursor: pointer;
 }
+
 .form-checkbox {
   display: flex;
-
   position: relative;
 }
 
-/* .form-checkbox:checked + .filter-checkbox::before {
+.form-checkbox:checked + .filter-checkbox::before {
+  content: url(../../images/check-mark.svg);
+  top: 0;
+  left: 0;
   
-} */
+  fill: #C29974;
+}
 
 /* radio-delivery */
 
@@ -102,6 +110,7 @@ fieldset {
   display: flex;
   align-items: center;
   margin-bottom: 16px;
+  cursor: pointer;
 }
 
 .shipping-radio {
@@ -112,7 +121,6 @@ fieldset {
   margin-right: 10px;
 
   border: 2px solid #C29974;
-  
 }
 
 .filter-delivery:checked + .shipping-radio::before {
@@ -122,7 +130,10 @@ fieldset {
   height: 12px;
   border-radius: 50%;
   background-color: #C29974;
+}
 
+.delivery-label:hover .input__text {
+  text-decoration: underline;
 }
 
 /* radio amount */
@@ -138,6 +149,11 @@ fieldset {
   justify-content: center;
   cursor: pointer;
   background-color: #FFFFFF;
+  transition: background-color ease-in-out .3s;
+}
+
+.amount-label:hover {
+  background-color: #EDDEEB;
 }
 
 .filter-amount:checked + .amount-label {
@@ -163,21 +179,60 @@ fieldset {
 }
 
 .card-title {
-  text-align: center;
-}
-
-
-.toy-slider__card {
-  width: 380px;
-}
-
-.card-title a {
   font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
   font-size: 14px;
   line-height: 19px;
   text-align: center;
 
   color: #1E0606;
+}
+
+
+.toy-slider__card {
+  width: 380px;
+  position: relative;
+  cursor: pointer;
+}
+
+.toy-slider__overlay {
+  position: absolute;
+  width: 207px;
+  height: 207px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #E5EAF8;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s, visibility .3s;
+}
+
+.overlay-link {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 29px;
+  text-transform: uppercase;
+
+  color: #1E0606;
+  text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+}
+
+.toy-slider__card:hover .toy-slider__overlay {
+  visibility: visible;
+  background: #E5EAF8;
+  opacity: 0.9;
+}
+
+.toy-slider__card:active .toy-slider__overlay {
+  visibility: visible;
+  background: #E5EAF8;
+  opacity: 0.67;
 }
 
 .price {
