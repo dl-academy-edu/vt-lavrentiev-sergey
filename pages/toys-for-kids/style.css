@@ -209,9 +209,6 @@ fieldset {
   visibility: hidden;
   opacity: 0;
   transition: opacity .3s, visibility .3s;
-}
-
-.overlay-link {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -226,7 +223,7 @@ fieldset {
 .toy-slider__card:hover .toy-slider__overlay {
   visibility: visible;
   background: #E5EAF8;
-  opacity: 0.9;
+  opacity: .9;
 }
 
 .toy-slider__card:active .toy-slider__overlay {

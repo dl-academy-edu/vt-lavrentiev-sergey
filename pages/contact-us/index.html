@@ -35,7 +35,7 @@
       <div class="contact-us__section">
         <form class="modal-window" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
           <label class="label">
-            <input type="text" class="modal-window__input label-input__name" name="name" placeholder="Ivan Ivanov">
+            <input type="text" class="modal-window__input label-input__name" name="name">
             <span class="input-text">Name</span>
           </label>
           <div class="label-row">
@@ -52,8 +52,9 @@
             <textarea name="message" class="label-message"></textarea>
             <span class="input-text">Message</span>
           </label>
-          <label class="label">
-            <input type="checkbox" class="label-input" name="accept" value="accept">
+          <label class="label form-label__checkbox">
+            <input type="checkbox" class="label-input form-checkbox hidden" name="accept" value="accept">
+            <span class="filter-checkbox"></span>
             <span class="checkbox-text">By clicking on the button, you consent to the processing of your personal data</span>
           </label>
           <button class="button modal-window__button" type="submit">
@@ -120,8 +121,8 @@
           <li><a href="#" class="social-link"><img src="../../images/Pinterest.svg" alt="Pinterest" /></a></li>
           <li><a href="#" class="social-link"><img src="../../images/Instagram.svg" alt="Instagram" /></a></li>
         </ul>
-        <p class="design-company">
-          Web Design — <a href="#">Direct Line Development</a>
+        <p>
+          <a href="#" class="design-company">Web Design — Direct Line Development</a>
         </p>       
       </div>
     </div>

@@ -1,4 +1,7 @@
-
+.category-title {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
 
 .category-products {
   font-family: 'Montserrat';
@@ -28,8 +31,16 @@
   margin-right: 20px;
 }
 
+.category-list__item:nth-child(4n) {
+  margin-left: 200px;
+}
+
+.block-title__description {
+  margin: 20px 0;
+}
+
 .products-description {
   width: 720px;
-  padding: 0px 20px 40px 20px;
-  margin: 0 auto;
+  padding: 0 20px 40px 20px;
+  margin-left: 180px;
 }
