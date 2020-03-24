@@ -438,7 +438,6 @@ opacity: 0.5;
 
 .category-product__bg-toys {
   background-color: #F8F2DA;
-  background-image: url(images/product-3.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-blend-mode: multiply;
@@ -446,7 +445,6 @@ opacity: 0.5;
 
 .category-product__bg-accessories {
   background-color: rgba(9, 3, 79, 0.17);
-  background-image: url(images/product-4.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-blend-mode: multiply;
@@ -454,7 +452,6 @@ opacity: 0.5;
 
 .category-product__bg-sale {
   background-color: rgba(207, 68, 111, 0.25);
-  background-image: url(images/product-4.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-blend-mode: multiply;
@@ -462,7 +459,6 @@ opacity: 0.5;
 
 .category-product__bg-adults {
   background-color: rgba(125, 151, 218, 0.2);
-  background-image: url(images/product-4.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-blend-mode: multiply;

@@ -31,11 +31,13 @@ fieldset {
 /* input range */
 
 .filter-range {
-  -webkit-appearance: none;
-  width: 188px;
+  background: linear-gradient(to right, #C29974 0%, #C29974 20%, rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 100%);
+  border: none;
+  border-radius: 8px;
   height: 4px;
-
-  background-color: #000000;
+  width: 188px;
+  outline: none;
+  -webkit-appearance: none;
 }
 
 .filter-range::-webkit-slider-thumb {
