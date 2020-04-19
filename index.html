@@ -11,7 +11,7 @@
   </head>
   <body>
     <header class="header container">
-      <a class="header-logo" href="#">
+      <a class="header-logo">
         <img src="images/logo.svg" alt="logo" />
       </a>
       <nav class="header-nav">
@@ -21,7 +21,7 @@
           <li><a href="#" class="nav-link">About us</a></li>
         </ul>
         <ul class="header-nav__contacts">
-          <li><a href="#" class="search"><img src="images/search.svg" alt="search"/></a></li>
+          <li><a href="#" class="header-nav__search"><img src="images/search.svg" alt="search"/></a></li>
           <li><a href="pages/contact-us/index.html" class="contact-link">Contact us</a></li>
         </ul>
       </nav>
@@ -60,7 +60,7 @@
         </p>
       </section>
       <section class="category container">
-        <h2 class="block-title categoty-title">Category Products</h2>
+        <h2 class="block-title category-title">Category Products</h2>
         <ul class="category-list">
           <li class="category-list__item category-product__bg-apparel" style="background-image: url(images/product-1.png)">
             <a href="#" class="category-products__link" >
@@ -127,10 +127,10 @@
       <section class="partners container">
         <h2 class="hidden">Partners</h2>
         <ul class="partner-list">
-          <li><a href="#"><img src="/images/partner-1.png" alt="Mail.ru"/></a></li>
-          <li><a href="#"><img src="/images/partner-2.png" alt="apple"/></a></li>
-          <li><a href="#"><img src="/images/partner-3.png" alt="Eltex"/></a></li>
-          <li><a href="#"><img src="/images/partner-4.png" alt="Owox"/></a></li>
+          <li><a href="#" class="partner-list__item"><img src="/images/partner-1.png" alt="Mail.ru"/></a></li>
+          <li><a href="#" class="partner-list__item"><img src="/images/partner-2.png" alt="apple"/></a></li>
+          <li><a href="#" class="partner-list__item"><img src="/images/partner-3.png" alt="Eltex"/></a></li>
+          <li><a href="#" class="partner-list__item"><img src="/images/partner-4.png" alt="Owox"/></a></li>
         </ul>
       </section>
     </main>
@@ -176,7 +176,7 @@
             <span class="star">&#9733;</span>
             <span class="star">&#9733;</span>
             <span class="star">&#9733;</span>
-          </div>        
+          </div>       
         </div>
         <div class="footer-section">
           <h2 class="footer-title">Customer Information</h2>
@@ -205,8 +205,8 @@
             <li><a href="#" class="social-link"><img src="images/Pinterest.svg" alt="Pinterest" /></a></li>
             <li><a href="#" class="social-link"><img src="images/Instagram.svg" alt="Instagram" /></a></li>
           </ul>
-          <p class="design-company">
-            Web Design — <a href="#">Direct Line Development</a>
+          <p>
+            <a href="#" class="design-company">Web Design — Direct Line Development</a>
           </p>       
         </div>
       </div>
@@ -231,8 +231,9 @@
           <textarea name="message" class="label-message"></textarea>
           <span class="input-text">Message</span>
         </label>
-        <label class="label">
-          <input type="checkbox" class="label-input" name="accept" value="accept">
+        <label class="label form-label__checkbox">
+          <input type="checkbox" class="label-input form-checkbox hidden" name="accept" value="accept">
+          <span class="filter-checkbox"></span>
           <span class="checkbox-text">By clicking on the button, you consent to the processing of your personal data</span>
         </label>
         <button class="button modal-window__button" type="submit">
